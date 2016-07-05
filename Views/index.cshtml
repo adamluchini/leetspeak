@@ -2,25 +2,19 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <title>Leet Speak</title>
   </head>
   <body>
     <div class="container">
-      <h1>Enter a phrase to be translated to LEET SPEAK: </h1>
-      <form action="/phrase" method="post">
+      <h1>Enter a phrase to be translated to Leet Speak </h1>
+      <form action="/phrase" method="get">
         <div class="form-group">
-          <label for="userInput">Enter a phrase here</label>
+          <label for="userInput">Type here</label>
           <input type="text" id="userInput" name="userInput">
         <div><br>
-          <button type="submit" class="btn btn-info">Translate your phrase</button>
+          <button type="submit" class="btn btn-info">Translate</button>
         </div>
         </div>
-
-        <h3>Translation: </h3>
-        <ul>
-          <li>@Model</li>
-        </ul>
       </form>
     </div>
   </body>

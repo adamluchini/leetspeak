@@ -11,9 +11,9 @@ namespace LeetSpeakClassGenerator
       Get["/"] = _ => {
         return View["index.cshtml"];
       };
-      Post["/phrase"] = _ => {
-        string newSentence = LeetSpeakClass.Translate(Request.Form["userInput"]);
-        return View ["index.cshtml", newSentence];
+      Get["/phrase"] = _ => {
+        string newSentence = LeetSpeakClass.Translate(Request.Query["userInput"]);
+        return View ["result_sentence.cshtml", newSentence];
       };
     }
   }
